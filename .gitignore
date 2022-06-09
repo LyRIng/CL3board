@@ -1,0 +1,44 @@
+# STM32 CL3 gitignore R.Oliva 05-2022
+# version 1.00
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+*.asm
+*.lst
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Executables
+*.exe
+*.out
+*.app
+*.hex
+*.rom
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+#Other
+*.docx
+!/docs/*.docx

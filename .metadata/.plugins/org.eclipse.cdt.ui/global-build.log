@@ -1,0 +1,462 @@
+10:47:10 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:08:46 **** Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:57 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+make: Nothing to be done for 'all'.
+09:59:45 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:09:04 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:50 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2019/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_FR_ej4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_FR_ej4.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_FR_ej4.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_FR_ej4.elf" "sAPI3C_FR_ej4.hex"
+arm-none-eabi-size "sAPI3C_FR_ej4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  40808	    832	  79600	 121240	  1d998	sAPI3C_FR_ej4.elf
+ 
+13:37:22 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+Building file: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"lib/sapi3c/external_peripherals/src/sapi3c_display.d" -MT"lib/sapi3c/external_peripherals/src/sapi3c_display.o" -o "lib/sapi3c/external_peripherals/src/sapi3c_display.o" "../lib/sapi3c/external_peripherals/src/sapi3c_display.c"
+Finished building: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+ 
+Building file: ../Src/general.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/general.d" -MT"Src/general.o" -o "Src/general.o" "../Src/general.c"
+Finished building: ../Src/general.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_FR_ej4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_FR_ej4.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_FR_ej4.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_FR_ej4.elf" "sAPI3C_FR_ej4.hex"
+arm-none-eabi-size "sAPI3C_FR_ej4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  40824	    832	  79600	 121256	  1d9a8	sAPI3C_FR_ej4.elf
+ 
+13:55:58 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+Building file: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"lib/sapi3c/external_peripherals/src/sapi3c_display.d" -MT"lib/sapi3c/external_peripherals/src/sapi3c_display.o" -o "lib/sapi3c/external_peripherals/src/sapi3c_display.o" "../lib/sapi3c/external_peripherals/src/sapi3c_display.c"
+Finished building: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+ 
+Building file: ../Src/general.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/general.d" -MT"Src/general.o" -o "Src/general.o" "../Src/general.c"
+Finished building: ../Src/general.c
+ 
+Building target: sAPI3C_FR_ej4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_FR_ej4.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_FR_ej4.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_FR_ej4.elf" "sAPI3C_FR_ej4.hex"
+arm-none-eabi-size "sAPI3C_FR_ej4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  40816	    832	  79600	 121248	  1d9a0	sAPI3C_FR_ej4.elf
+ 
+14:00:10 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+Building file: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"lib/sapi3c/external_peripherals/src/sapi3c_display.d" -MT"lib/sapi3c/external_peripherals/src/sapi3c_display.o" -o "lib/sapi3c/external_peripherals/src/sapi3c_display.o" "../lib/sapi3c/external_peripherals/src/sapi3c_display.c"
+Finished building: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+ 
+Building target: sAPI3C_FR_ej4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_FR_ej4.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_FR_ej4.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_FR_ej4.elf" "sAPI3C_FR_ej4.hex"
+arm-none-eabi-size "sAPI3C_FR_ej4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  40820	    832	  79600	 121252	  1d9a4	sAPI3C_FR_ej4.elf
+ 
+14:30:44 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej1 ****
+make all 
+Building file: ../Src/adc.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" -o "Src/adc.o" "../Src/adc.c"
+../Src/adc.c: In function 'MX_ADC1_Init':
+../Src/adc.c:50:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+Finished building: ../Src/adc.c
+ 
+Building file: ../Src/i2c.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" -o "Src/i2c.o" "../Src/i2c.c"
+../Src/i2c.c: In function 'MX_I2C1_Init':
+../Src/i2c.c:45:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+Finished building: ../Src/i2c.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/rtc.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/rtc.d" -MT"Src/rtc.o" -o "Src/rtc.o" "../Src/rtc.c"
+../Src/rtc.c: In function 'MX_RTC_Init':
+../Src/rtc.c:46:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+Finished building: ../Src/rtc.c
+ 
+Building file: ../Src/sdio.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/sdio.d" -MT"Src/sdio.o" -o "Src/sdio.o" "../Src/sdio.c"
+../Src/sdio.c: In function 'MX_SDIO_SD_Init':
+../Src/sdio.c:43:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+Finished building: ../Src/sdio.c
+ 
+Building file: ../Src/spi.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/spi.d" -MT"Src/spi.o" -o "Src/spi.o" "../Src/spi.c"
+../Src/spi.c: In function 'MX_SPI1_Init':
+../Src/spi.c:47:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+Finished building: ../Src/spi.c
+ 
+Building file: ../Src/stm32f4xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
+Finished building: ../Src/stm32f4xx_hal_msp.c
+ 
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
+ 
+Building file: ../Src/usart.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej1/lib/sapi3c/abstract_modules/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/usart.d" -MT"Src/usart.o" -o "Src/usart.o" "../Src/usart.c"
+Finished building: ../Src/usart.c
+ 
+Building target: sAPI3C_BM_ej1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej1.elf" @"objects.list"   -lm
+lib/sapi3c/board/src/stm32f4xx_hal_msp.o: In function `HAL_MspInit':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_hal_msp.c:65: multiple definition of `HAL_MspInit'
+Src/stm32f4xx_hal_msp.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_hal_msp.c:65: first defined here
+lib/sapi3c/board/src/stm32f4xx_hal_timebase_tim.o: In function `HAL_InitTick':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_hal_timebase_tim.c:43: multiple definition of `HAL_InitTick'
+Src/stm32f4xx_hal_timebase_tim.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_hal_timebase_tim.c:43: first defined here
+lib/sapi3c/board/src/stm32f4xx_hal_timebase_tim.o: In function `HAL_SuspendTick':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_hal_timebase_tim.c:99: multiple definition of `HAL_SuspendTick'
+Src/stm32f4xx_hal_timebase_tim.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_hal_timebase_tim.c:99: first defined here
+lib/sapi3c/board/src/stm32f4xx_hal_timebase_tim.o: In function `HAL_ResumeTick':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_hal_timebase_tim.c:111: multiple definition of `HAL_ResumeTick'
+Src/stm32f4xx_hal_timebase_tim.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_hal_timebase_tim.c:111: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `NMI_Handler':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_it.c:79: multiple definition of `NMI_Handler'
+Src/stm32f4xx_it.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_it.c:79: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `HardFault_Handler':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_it.c:85: multiple definition of `HardFault_Handler'
+Src/stm32f4xx_it.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_it.c:85: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `MemManage_Handler':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_it.c:100: multiple definition of `MemManage_Handler'
+Src/stm32f4xx_it.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_it.c:100: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `BusFault_Handler':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_it.c:115: multiple definition of `BusFault_Handler'
+Src/stm32f4xx_it.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_it.c:115: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `UsageFault_Handler':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_it.c:130: multiple definition of `UsageFault_Handler'
+Src/stm32f4xx_it.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_it.c:130: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `SVC_Handler':
+stm32f4xx_it.c:(.text.SVC_Handler+0x0): multiple definition of `SVC_Handler'
+Src/stm32f4xx_it.o:stm32f4xx_it.c:(.text.SVC_Handler+0x0): first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `DebugMon_Handler':
+stm32f4xx_it.c:(.text.DebugMon_Handler+0x0): multiple definition of `DebugMon_Handler'
+Src/stm32f4xx_it.o:stm32f4xx_it.c:(.text.DebugMon_Handler+0x0): first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `PendSV_Handler':
+stm32f4xx_it.c:(.text.PendSV_Handler+0x0): multiple definition of `PendSV_Handler'
+Src/stm32f4xx_it.o:stm32f4xx_it.c:(.text.PendSV_Handler+0x0): first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `TIM1_UP_TIM10_IRQHandler':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/stm32f4xx_it.c:195: multiple definition of `TIM1_UP_TIM10_IRQHandler'
+Src/stm32f4xx_it.o:C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej1\Debug/../Src/stm32f4xx_it.c:195: first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `USART1_IRQHandler':
+stm32f4xx_it.c:(.text.USART1_IRQHandler+0x0): multiple definition of `USART1_IRQHandler'
+Src/stm32f4xx_it.o:stm32f4xx_it.c:(.text.USART1_IRQHandler+0x0): first defined here
+lib/sapi3c/board/src/stm32f4xx_it.o: In function `USART6_IRQHandler':
+stm32f4xx_it.c:(.text.USART6_IRQHandler+0x0): multiple definition of `USART6_IRQHandler'
+Src/stm32f4xx_it.o:stm32f4xx_it.c:(.text.USART6_IRQHandler+0x0): first defined here
+lib/sapi3c/board/src/syscalls.o: In function `initialise_monitor_handles':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:72: multiple definition of `initialise_monitor_handles'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:72: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_getpid':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:77: multiple definition of `_getpid'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:77: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_kill':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:80: multiple definition of `_kill'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:80: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_exit':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:86: multiple definition of `_exit'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:86: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_sbrk':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:120: multiple definition of `_sbrk'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:120: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_close':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:140: multiple definition of `_close'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:140: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_fstat':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:145: multiple definition of `_fstat'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:145: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_isatty':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:152: multiple definition of `_isatty'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:152: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_lseek':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:157: multiple definition of `_lseek'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:157: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_open':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:160: multiple definition of `_open'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:160: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_wait':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:166: multiple definition of `_wait'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:166: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_unlink':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:172: multiple definition of `_unlink'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:172: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_times':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:180: multiple definition of `_times'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:180: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_stat':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:184: multiple definition of `_stat'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:184: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_link':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:189: multiple definition of `_link'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:189: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_fork':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:195: multiple definition of `_fork'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:195: first defined here
+lib/sapi3c/board/src/syscalls.o: In function `_execve':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:201: multiple definition of `_execve'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:201: first defined here
+lib/sapi3c/board/src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:66: multiple definition of `environ'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:66: first defined here
+lib/sapi3c/board/src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/syscalls.c:65: multiple definition of `__env'
+Src/syscalls.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/syscalls.c:65: first defined here
+lib/sapi3c/board/src/system_stm32f4xx.o: In function `SystemInit':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/system_stm32f4xx.c:170: multiple definition of `SystemInit'
+Src/system_stm32f4xx.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/system_stm32f4xx.c:170: first defined here
+lib/sapi3c/board/src/system_stm32f4xx.o: In function `SystemCoreClockUpdate':
+C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../lib/sapi3c/board/src/system_stm32f4xx.c:244: multiple definition of `SystemCoreClockUpdate'
+Src/system_stm32f4xx.o:C:\Work_EmbdSTM32\2019\CL3\sAPI3C_BM_ej1\Debug/../Src/system_stm32f4xx.c:244: first defined here
+lib/sapi3c/board/src/system_stm32f4xx.o:(.rodata+0x10): multiple definition of `APBPrescTable'
+Src/system_stm32f4xx.o:(.rodata+0x10): first defined here
+lib/sapi3c/board/src/system_stm32f4xx.o:(.rodata+0x0): multiple definition of `AHBPrescTable'
+Src/system_stm32f4xx.o:(.rodata+0x0): first defined here
+lib/sapi3c/board/src/system_stm32f4xx.o:C:/Work_EmbdSTM32/2019/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:74: multiple definition of `SystemCoreClock'
+Src/system_stm32f4xx.o:C:/Work_EmbdSTM32/2019/CL3/sAPI3C_BM_ej1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:74: first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:40: recipe for target 'sAPI3C_BM_ej1.elf' failed
+make: *** [sAPI3C_BM_ej1.elf] Error 1
+14:36:19 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej2 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/soc/peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_BM_ej2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej2.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_BM_ej2.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej2.elf" "sAPI3C_BM_ej2.hex"
+arm-none-eabi-size "sAPI3C_BM_ej2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7436	     24	   1736	   9196	   23ec	sAPI3C_BM_ej2.elf
+ 
+14:44:24 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej2 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej2/lib/sapi3c/soc/peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_BM_ej2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej2.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_BM_ej2.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej2.elf" "sAPI3C_BM_ej2.hex"
+arm-none-eabi-size "sAPI3C_BM_ej2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7448	     24	   1736	   9208	   23f8	sAPI3C_BM_ej2.elf
+ 
+14:44:53 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej2 ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:27 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej3 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_BM_ej3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej3.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_BM_ej3.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej3.elf" "sAPI3C_BM_ej3.hex"
+arm-none-eabi-size "sAPI3C_BM_ej3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24704	    148	   1844	  26696	   6848	sAPI3C_BM_ej3.elf
+ 
+15:07:23 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej3 ****
+make all 
+Building file: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"lib/sapi3c/external_peripherals/src/sapi3c_display.d" -MT"lib/sapi3c/external_peripherals/src/sapi3c_display.o" -o "lib/sapi3c/external_peripherals/src/sapi3c_display.o" "../lib/sapi3c/external_peripherals/src/sapi3c_display.c"
+Finished building: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_BM_ej3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej3.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_BM_ej3.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej3.elf" "sAPI3C_BM_ej3.hex"
+arm-none-eabi-size "sAPI3C_BM_ej3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24720	    148	   1844	  26712	   6858	sAPI3C_BM_ej3.elf
+ 
+15:10:15 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej3 ****
+make all 
+Building file: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"lib/sapi3c/external_peripherals/src/sapi3c_display.d" -MT"lib/sapi3c/external_peripherals/src/sapi3c_display.o" -o "lib/sapi3c/external_peripherals/src/sapi3c_display.o" "../lib/sapi3c/external_peripherals/src/sapi3c_display.c"
+Finished building: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+ 
+Building target: sAPI3C_BM_ej3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej3.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_BM_ej3.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej3.elf" "sAPI3C_BM_ej3.hex"
+arm-none-eabi-size "sAPI3C_BM_ej3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24716	    148	   1844	  26708	   6854	sAPI3C_BM_ej3.elf
+ 
+15:12:53 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej3 ****
+make all 
+Building file: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_BM_ej3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_BM_ej3/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"lib/sapi3c/external_peripherals/src/sapi3c_display.d" -MT"lib/sapi3c/external_peripherals/src/sapi3c_display.o" -o "lib/sapi3c/external_peripherals/src/sapi3c_display.o" "../lib/sapi3c/external_peripherals/src/sapi3c_display.c"
+Finished building: ../lib/sapi3c/external_peripherals/src/sapi3c_display.c
+ 
+Building target: sAPI3C_BM_ej3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej3.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_BM_ej3.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej3.elf" "sAPI3C_BM_ej3.hex"
+arm-none-eabi-size "sAPI3C_BM_ej3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24716	    148	   1844	  26708	   6854	sAPI3C_BM_ej3.elf
+ 
+15:14:49 **** Incremental Build of configuration Debug for project sAPI3C_BM_ej3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:19:40 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Work_EmbdSTM32\2022\CL3\sAPI3C_FR_ej4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_FULL_LL_DRIVER '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F411xE -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/Drivers/CMSIS/Include" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/abstract_modules/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/base/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/board/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/core/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/soc/peripherals/inc" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/ili9341" -I"C:/Work_EmbdSTM32/2022/CL3/sAPI3C_FR_ej4/lib/sapi3c/external_peripherals/inc"  -O3 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: sAPI3C_FR_ej4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_FR_ej4.elf" @"objects.list"   -lm
+Finished building target: sAPI3C_FR_ej4.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "sAPI3C_FR_ej4.elf" "sAPI3C_FR_ej4.hex"
+arm-none-eabi-size "sAPI3C_FR_ej4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  40820	    832	  79600	 121252	  1d9a4	sAPI3C_FR_ej4.elf
+ 
+16:18:08 **** Incremental Build of configuration Debug for project sAPI3C_FR_ej4 ****
+make all 
+make: Nothing to be done for 'all'.
