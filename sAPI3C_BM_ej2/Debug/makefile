@@ -1,5 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (10.3-2021.10)
 ################################################################################
 
 -include ../makefile.init
@@ -16,10 +17,12 @@ RM := rm -rf
 -include lib/sapi3c/abstract_modules/src/subdir.mk
 -include Src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
--include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
+endif
 ifneq ($(strip $(S_UPPER_DEPS)),)
 -include $(S_UPPER_DEPS)
 endif
@@ -30,32 +33,75 @@ endif
 
 -include ../makefile.defs
 
+OPTIONAL_TOOL_DEPS := \
+$(wildcard ../makefile.defs) \
+$(wildcard ../makefile.init) \
+$(wildcard ../makefile.targets) \
+
+
+BUILD_ARTIFACT_NAME := sAPI3C_BM_ej2
+BUILD_ARTIFACT_EXTENSION := elf
+BUILD_ARTIFACT_PREFIX :=
+BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
+
 # Add inputs and outputs from these tool invocations to the build variables 
+EXECUTABLES += \
+sAPI3C_BM_ej2.elf \
+
+MAP_FILES += \
+sAPI3C_BM_ej2.map \
+
+SIZE_OUTPUT += \
+default.size.stdout \
+
+OBJDUMP_LIST += \
+sAPI3C_BM_ej2.list \
+
+OBJCOPY_HEX += \
+sAPI3C_BM_ej2.hex \
+
 
 # All Target
-all: sAPI3C_BM_ej2.elf
+all: main-build
+
+# Main-build Target
+main-build: sAPI3C_BM_ej2.elf secondary-outputs
 
 # Tool invocations
-sAPI3C_BM_ej2.elf: $(OBJS) $(USER_OBJS) ../STM32F411RETx_FLASH.ld
-	@echo 'Building target: $@'
-	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F411RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "sAPI3C_BM_ej2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+sAPI3C_BM_ej2.elf sAPI3C_BM_ej2.map: $(OBJS) $(USER_OBJS) ../STM32F411RETx_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "sAPI3C_BM_ej2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"../STM32F411RETx_FLASH.ld" --specs=nosys.specs -Wl,-Map="sAPI3C_BM_ej2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
-	$(MAKE) --no-print-directory post-build
+
+default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-size  $(EXECUTABLES)
+	@echo 'Finished building: $@'
+	@echo ' '
+
+sAPI3C_BM_ej2.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "sAPI3C_BM_ej2.list"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+sAPI3C_BM_ej2.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "sAPI3C_BM_ej2.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) *
+	-$(RM) default.size.stdout sAPI3C_BM_ej2.elf sAPI3C_BM_ej2.hex sAPI3C_BM_ej2.list sAPI3C_BM_ej2.map
 	-@echo ' '
 
-post-build:
-	-@echo 'Generating hex and Printing size information:'
-	arm-none-eabi-objcopy -O ihex "sAPI3C_BM_ej2.elf" "sAPI3C_BM_ej2.hex"
-	arm-none-eabi-size "sAPI3C_BM_ej2.elf"
-	-@echo ' '
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
-.PHONY: all clean dependents
-.SECONDARY: post-build
+fail-specified-linker-script-missing:
+	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
+	@exit 2
+
+warn-no-linker-script-specified:
+	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
+
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
 
 -include ../makefile.targets
